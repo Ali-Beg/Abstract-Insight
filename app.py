@@ -10,7 +10,7 @@ AUTOTUNE = tf.data.AUTOTUNE
 # Load the model
 @st.cache_resource
 def load_my_model():
-    model = tf_load_model('model\skimlit_model_large.keras')  # Update with the correct path to your model
+    model = tf_load_model('model/skimlit_model_large.keras')  # Update with the correct path to your model
     return model
 
 # Define a character splitting function
