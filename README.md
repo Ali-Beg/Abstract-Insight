@@ -5,7 +5,6 @@
 
 This **Medical Abstract Classification** Streamlit app allows users to classify sentences in medical abstracts into categories such as **Objective**, **Methods**, **Results**, **Conclusions**, and **Background**. The app utilizes a machine learning model to predict the labels for each sentence in the abstract based on its content.
 
-![App Screenshot](path-to-screenshot.png) <!-- Replace with actual screenshot path -->
 
 ## 📝 Features
 
@@ -102,8 +101,4 @@ For any questions or issues, feel free to reach out:
 - Email: mbeg937@gmail.com
 - GitHub: [ALI BEG](https://github.com/Ali-Beg)
 
----
-
-
-```
 
