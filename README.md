@@ -1,104 +1,94 @@
-# Abstract-Insight
+# 🏥 Medical Abstract Classification App
 
-```markdown
-# Medical Abstract Classification App 🏥🧠
+This **Medical Abstract Classification** app allows users to classify sentences in medical abstracts into categories like **Objective**, **Methods**, **Results**, **Conclusions**, and **Background** using a machine learning model. The app is built with **Streamlit**
 
-This **Medical Abstract Classification** Streamlit app allows users to classify sentences in medical abstracts into categories such as **Objective**, **Methods**, **Results**, **Conclusions**, and **Background**. The app utilizes a machine learning model to predict the labels for each sentence in the abstract based on its content.
+## 🌟 Features
 
-
-## 📝 Features
-
-- Classify medical abstracts sentence by sentence into distinct categories.
-- Displays both the predicted **label** and **probability** for each sentence.
-- Organized output with separate sections for each label.
-- Simple, user-friendly interface built with **Streamlit**.
+- Classifies medical abstracts into five distinct categories.
+- Displays the predicted label and probability for each sentence.
+- Clean and simple UI with Streamlit.
 
 ## 🚀 Demo
 
-Try the live version of the app here: [Abstract-Insight](https://abstract-insight.streamlit.app/) 
+Try the live app: [Abstract_Insight](https://abstract-insight.streamlit.app/)
 
 ## 📂 Project Structure
 
-```
-├── app.py                   # Main Streamlit app script
-├── model/                   # Directory containing the trained model
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
+```bash
+my-streamlit-app/
+├── app.py                 # Main Streamlit app script
+├── model/                 # Trained model directory
+├── requirements.txt       # Dependencies for the project
+└── README.md              # Documentation (this file)
 ```
 
-## 📦 Installation & Setup
+## 🛠️ Setup Instructions
 
-To run this project locally, follow these steps:
+To run this project locally:
 
 1. **Clone the repository**:
 
-   ```bash
-   git clone https://github.com/your-username/my-streamlit-app.git
-   cd my-streamlit-app
-   ```
+    ```bash
+    git clone https://github.com/Ali-Beg/Abstract-Insight.git
+    cd Abstract-Insight
+    ```
 
-2. **Create a virtual environment** and activate it:
+2. **Create and activate a virtual environment**:
 
-   ```bash
-   python -m venv env
-   source env/bin/activate      # On Linux/MacOS
-   .\env\Scripts\activate       # On Windows
-   ```
+    On Windows:
+    ```bash
+    python -m venv env
+    .\env\Scripts\activate
+    ```
 
-3. **Install dependencies**:
+    On Linux/Mac:
+    ```bash
+    python3 -m venv env
+    source env/bin/activate
+    ```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+3. **Install the required dependencies**:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 4. **Run the Streamlit app**:
 
-   ```bash
-   streamlit run app.py
-   ```
+    ```bash
+    streamlit run app.py
+    ```
 
-## ⚙️ Usage
+## 🧠 Model Information
 
-- Open the app in your browser.
-- Input a medical abstract in the text box.
-- Press the "Classify Abstract" button.
-- The app will display the classification of each sentence into the categories: **Objective**, **Methods**, **Results**, **Conclusions**, or **Background** with the corresponding probability.
-
-## 🛠 Dependencies
-
-The following packages are required to run the project:
-
-- `streamlit`
-- `tensorflow`
-- `pandas`
-- `numpy`
-
-The full list of dependencies can be found in `requirements.txt`.
-
-## 🤖 Model Information
-
-The machine learning model used in this project was trained on a dataset of medical abstracts to classify sentences into five categories:
+The model is trained to classify medical abstract sentences into one of five categories:
 - **Objective**
 - **Methods**
 - **Results**
 - **Conclusions**
 - **Background**
 
-The model is loaded from a saved `.keras` file in the project directory.
+The model is loaded from a `.keras` file located in the `model` directory.
+
+## 📋 Requirements
+
+- `streamlit`
+- `tensorflow`
+- `pandas`
+- `numpy`
+
+Make sure all dependencies are listed in `requirements.txt`.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to fork this repository and submit pull requests with improvements.
+Feel free to fork the repository and submit pull requests! Contributions are welcome.
 
-## 📄 License
+## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 📧 Contact
+## ✉️ Contact
 
-For any questions or issues, feel free to reach out:
-
+For any questions or support, contact:
+- GitHub: [Ali Beg](https://github.com/Ali-Beg)
 - Email: mbeg937@gmail.com
-- GitHub: [ALI BEG](https://github.com/Ali-Beg)
-
-
