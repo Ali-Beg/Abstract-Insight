@@ -162,18 +162,24 @@ def prep_abstract_and_predict(model, abstract_text):
     return abstract_df
 
 # Streamlit app UI
-st.title("📝 Medical Abstract Classification")
+# st.title("📝 Medical Abstract Classification")
+st.title("📝 News Article Classification")
+
+# st.write("""
+#     Input a medical abstract below, and our model will classify each line into:
+#     **OBJECTIVE**, **METHODS**, **RESULTS**, **CONCLUSIONS**, or **BACKGROUND**.
+# """)
 
 st.write("""
-    Input a medical abstract below, and our model will classify each line into:
-    **OBJECTIVE**, **METHODS**, **RESULTS**, **CONCLUSIONS**, or **BACKGROUND**.
+    Input a news article below, and our model will classify each sentence into: 
+    HEADLINE, SUBHEADING, MAIN BODY, QUOTES, or CONCLUSION
 """)
 
 # Input for abstract text
-abstract_text = st.text_area("📄 Enter the medical abstract here:", height=250)
+abstract_text = st.text_area("📄 Enter the news article here:", height=250)
 
 # Button to trigger classification
-if st.button("🔍 Classify Abstract"):
+if st.button("🔍 Classify News"):
     if abstract_text:
         # Load the model
         model = load_my_model()
@@ -210,4 +216,4 @@ if st.button("🔍 Classify Abstract"):
             for index, row in grouped_results.get_group('BACKGROUND').iterrows():
                 st.markdown(f"**{row['text']}**")
     else:
-        st.warning("⚠️ Please enter a medical abstract.")
+        st.warning("⚠️ Please enter a news article.")
